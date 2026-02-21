@@ -216,7 +216,7 @@
   const flash       = document.getElementById('flash');
   const presets     = document.querySelectorAll('.preset');
 
-  const fmt = s => `${Math.floor(s/60)}:${(s%60).toString().padStart(2,'0')}`;
+  const fmt = s => `${Math.floor(s/60).toString().padStart(2,'0')}:${(s%60).toString().padStart(2,'0')}`;
 
   function playChime() {
     try {
